@@ -11,18 +11,18 @@ void check_point(double *pX, double *pY, int n, const double& x, const double& y
     int count_intersect = 0;
     for (int i = 0; i < n; i++)
     {
-#ifndef DEBUG
+#ifdef DEBUG
         printf("<<<<<<<<POINT: (%.2f, %.2f), (%.2f, %.2f)\n", pX[i], pY[i], pX[i + 1], pY[i + 1]);
 #endif
         {
             double t_1 = (x - pX[i + 1]) / (pX[i + 1] - pX[i]);
             double t_2 = (y - pY[i + 1]) / (pY[i + 1] - pY[i]);
 
-#ifndef DEBUG
+#ifdef DEBUG
             printf("t1, t2 -- (%.3f, %.3f)\n", t_1, t_2);
 #endif
 
-            if ((std::fabs(t_1 - t_2) < std::numeric_limits<double>::epsilon()) && (t_1 >= -1.) && ((t_1 <= 0.)))
+            if ((std::fabs(t_1 - t_2) < 100*std::numeric_limits<double>::epsilon()) && (t_1 >= -1.) && ((t_1 <= 0.)))
             {
                 std::cout << "lies on the side" << std::endl;
                 return;
@@ -35,7 +35,7 @@ void check_point(double *pX, double *pY, int n, const double& x, const double& y
         {
             count_intersect++;
         }
-#ifndef DEBUG
+#ifdef DEBUG
         std::cout << "  t: " << t << std::endl;
 #endif
     }

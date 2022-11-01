@@ -3,6 +3,7 @@
 #include <fstream>
 #include <string>
 
+
 /* double* read_points(const std::string &filename)
 {
     FILE *fileptr = fopen(filename.c_str(), "r");
@@ -20,3 +21,7 @@ enum class ReadErrors
 ReadErrors check_file(const std::string &filename, int &n);
 ReadErrors read_points(const std::string &filename, int n, double *x, double *y);
 std::string get_error_name(ReadErrors err_info);
+
+//
+int *p_x;
+int x;rffj999999999999999999999999999999999999999
