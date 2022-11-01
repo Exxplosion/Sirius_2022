@@ -1,0 +1,2 @@
+/usr/bin/ar qc libdjkstra_matrix.a  CMakeFiles/djkstra_matrix.dir/Matrix.cpp.o CMakeFiles/djkstra_matrix.dir/djkstra.cpp.o
+/usr/bin/ranlib libdjkstra_matrix.a

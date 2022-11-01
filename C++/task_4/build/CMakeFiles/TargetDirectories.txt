@@ -1,0 +1,4 @@
+/home/explosion/Desktop/C++/Sirius_2022/optimal_path/build/CMakeFiles/rebuild_cache.dir
+/home/explosion/Desktop/C++/Sirius_2022/optimal_path/build/CMakeFiles/edit_cache.dir
+/home/explosion/Desktop/C++/Sirius_2022/optimal_path/build/CMakeFiles/main.dir
+/home/explosion/Desktop/C++/Sirius_2022/optimal_path/build/CMakeFiles/djkstra_matrix.dir
