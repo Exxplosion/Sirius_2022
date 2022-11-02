@@ -6,17 +6,3 @@
 
 #IncludeRegexTransform: 
 
-/home/explosion/Desktop/C++/Sirius_2022/Sirius_2022/C++/task_4/matrix/Matrix.cpp
-Matrix.h
-/home/explosion/Desktop/C++/Sirius_2022/Sirius_2022/C++/task_4/matrix/Matrix.h
-iostream
--
-algorithm
--
-cstdlib
--
-
-/home/explosion/Desktop/C++/Sirius_2022/Sirius_2022/C++/task_4/matrix/Matrix.h
-stdexcept
--
-

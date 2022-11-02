@@ -68,17 +68,9 @@ void dijkstra::matrix_to_adjacency_list(std::vector<std::vector<std::pair<uint32
         // FOR M > N 
         if (j_ == 0)
         {
-            if (i_ != M - 1)
-            {
-                adjacency_list[i] = std::vector<std::pair<uint32_t, uint32_t>>(2);
-                adjacency_list[i][0] = std::make_pair(i + 1, adjancency_matrix(i_, j_ + 1));
-                adjacency_list[i][1] = std::make_pair(i + M + 1, adjancency_matrix(i_ + 1 , j_));
-            }
-            else
-            {
-                adjacency_list[i] = std::vector<std::pair<uint32_t, uint32_t>>(1);
-                adjacency_list[i][0] = std::make_pair(i + 1, adjancency_matrix(i_, j_ + 1));
-            }
+            adjacency_list[i] = std::vector<std::pair<uint32_t, uint32_t>>(2);
+            adjacency_list[i][0] = std::make_pair(i + 1, adjancency_matrix(i_, j_ + 1));
+            adjacency_list[i][1] = std::make_pair(i + M, adjancency_matrix(i_ + 1 , j_));
         }
         else 
         {
@@ -88,7 +80,7 @@ void dijkstra::matrix_to_adjacency_list(std::vector<std::vector<std::pair<uint32
                 {
                     adjacency_list[i] = std::vector<std::pair<uint32_t, uint32_t>>(2);
                     adjacency_list[i][0] = std::make_pair(i - 1, adjancency_matrix(i_, j_ - 1));
-                    adjacency_list[i][1] = std::make_pair(i + M + 1, adjancency_matrix(i_ + 1, j_));
+                    adjacency_list[i][1] = std::make_pair(i + M, adjancency_matrix(i_ + 1, j_));
                 }
                 else
                 {
@@ -108,7 +100,7 @@ void dijkstra::matrix_to_adjacency_list(std::vector<std::vector<std::pair<uint32
                 {
                     adjacency_list[i] = std::vector<std::pair<uint32_t, uint32_t>>(3);
                     adjacency_list[i][0] = std::make_pair(i - 1, adjancency_matrix(i_, j_ - 1));
-                    adjacency_list[i][1] = std::make_pair(i + M + 1, adjancency_matrix(i_ + 1, j_));
+                    adjacency_list[i][1] = std::make_pair(i + M, adjancency_matrix(i_ + 1, j_));
                     adjacency_list[i][2] = std::make_pair(i + 1, adjancency_matrix(i_, j_ + 1));
                 }
             }

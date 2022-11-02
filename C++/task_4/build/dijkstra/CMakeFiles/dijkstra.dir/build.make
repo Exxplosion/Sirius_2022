@@ -60,15 +60,15 @@ include dijkstra/CMakeFiles/dijkstra.dir/flags.make
 dijkstra/CMakeFiles/dijkstra.dir/dijkstra.cpp.o: dijkstra/CMakeFiles/dijkstra.dir/flags.make
 dijkstra/CMakeFiles/dijkstra.dir/dijkstra.cpp.o: ../dijkstra/dijkstra.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/explosion/Desktop/C++/Sirius_2022/Sirius_2022/C++/task_4/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object dijkstra/CMakeFiles/dijkstra.dir/dijkstra.cpp.o"
-	cd /home/explosion/Desktop/C++/Sirius_2022/Sirius_2022/C++/task_4/build/dijkstra && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dijkstra.dir/dijkstra.cpp.o -c /home/explosion/Desktop/C++/Sirius_2022/Sirius_2022/C++/task_4/dijkstra/dijkstra.cpp
+	cd /home/explosion/Desktop/C++/Sirius_2022/Sirius_2022/C++/task_4/build/dijkstra && /usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dijkstra.dir/dijkstra.cpp.o -c /home/explosion/Desktop/C++/Sirius_2022/Sirius_2022/C++/task_4/dijkstra/dijkstra.cpp
 
 dijkstra/CMakeFiles/dijkstra.dir/dijkstra.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/dijkstra.dir/dijkstra.cpp.i"
-	cd /home/explosion/Desktop/C++/Sirius_2022/Sirius_2022/C++/task_4/build/dijkstra && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/explosion/Desktop/C++/Sirius_2022/Sirius_2022/C++/task_4/dijkstra/dijkstra.cpp > CMakeFiles/dijkstra.dir/dijkstra.cpp.i
+	cd /home/explosion/Desktop/C++/Sirius_2022/Sirius_2022/C++/task_4/build/dijkstra && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/explosion/Desktop/C++/Sirius_2022/Sirius_2022/C++/task_4/dijkstra/dijkstra.cpp > CMakeFiles/dijkstra.dir/dijkstra.cpp.i
 
 dijkstra/CMakeFiles/dijkstra.dir/dijkstra.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/dijkstra.dir/dijkstra.cpp.s"
-	cd /home/explosion/Desktop/C++/Sirius_2022/Sirius_2022/C++/task_4/build/dijkstra && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/explosion/Desktop/C++/Sirius_2022/Sirius_2022/C++/task_4/dijkstra/dijkstra.cpp -o CMakeFiles/dijkstra.dir/dijkstra.cpp.s
+	cd /home/explosion/Desktop/C++/Sirius_2022/Sirius_2022/C++/task_4/build/dijkstra && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/explosion/Desktop/C++/Sirius_2022/Sirius_2022/C++/task_4/dijkstra/dijkstra.cpp -o CMakeFiles/dijkstra.dir/dijkstra.cpp.s
 
 # Object files for target dijkstra
 dijkstra_OBJECTS = \

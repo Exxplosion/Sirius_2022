@@ -60,15 +60,15 @@ include load_png/CMakeFiles/load_png.dir/flags.make
 load_png/CMakeFiles/load_png.dir/lodepng.cpp.o: load_png/CMakeFiles/load_png.dir/flags.make
 load_png/CMakeFiles/load_png.dir/lodepng.cpp.o: ../load_png/lodepng.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/explosion/Desktop/C++/Sirius_2022/Sirius_2022/C++/task_4/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object load_png/CMakeFiles/load_png.dir/lodepng.cpp.o"
-	cd /home/explosion/Desktop/C++/Sirius_2022/Sirius_2022/C++/task_4/build/load_png && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/load_png.dir/lodepng.cpp.o -c /home/explosion/Desktop/C++/Sirius_2022/Sirius_2022/C++/task_4/load_png/lodepng.cpp
+	cd /home/explosion/Desktop/C++/Sirius_2022/Sirius_2022/C++/task_4/build/load_png && /usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/load_png.dir/lodepng.cpp.o -c /home/explosion/Desktop/C++/Sirius_2022/Sirius_2022/C++/task_4/load_png/lodepng.cpp
 
 load_png/CMakeFiles/load_png.dir/lodepng.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/load_png.dir/lodepng.cpp.i"
-	cd /home/explosion/Desktop/C++/Sirius_2022/Sirius_2022/C++/task_4/build/load_png && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/explosion/Desktop/C++/Sirius_2022/Sirius_2022/C++/task_4/load_png/lodepng.cpp > CMakeFiles/load_png.dir/lodepng.cpp.i
+	cd /home/explosion/Desktop/C++/Sirius_2022/Sirius_2022/C++/task_4/build/load_png && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/explosion/Desktop/C++/Sirius_2022/Sirius_2022/C++/task_4/load_png/lodepng.cpp > CMakeFiles/load_png.dir/lodepng.cpp.i
 
 load_png/CMakeFiles/load_png.dir/lodepng.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/load_png.dir/lodepng.cpp.s"
-	cd /home/explosion/Desktop/C++/Sirius_2022/Sirius_2022/C++/task_4/build/load_png && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/explosion/Desktop/C++/Sirius_2022/Sirius_2022/C++/task_4/load_png/lodepng.cpp -o CMakeFiles/load_png.dir/lodepng.cpp.s
+	cd /home/explosion/Desktop/C++/Sirius_2022/Sirius_2022/C++/task_4/build/load_png && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/explosion/Desktop/C++/Sirius_2022/Sirius_2022/C++/task_4/load_png/lodepng.cpp -o CMakeFiles/load_png.dir/lodepng.cpp.s
 
 # Object files for target load_png
 load_png_OBJECTS = \

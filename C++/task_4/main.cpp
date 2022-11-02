@@ -89,13 +89,26 @@ void findOptimalPath(int** arr, vector<int>& path, int x_i, int x_f, int rows, i
 
     G.find_optimal_path();
 
+/*     std::vector<uint32_t> path_n = G.find_optimal_path();
+
+    cout << ("        est sajhaj\n");
+
+    for (uint32_t i = 0; i < path_n.size(); ++i)
+    {
+        printf("%d ", path_n[i]);
+    }
+ */
     path = G.path_to_dumb_view<int>();
+
+    //G.print_adjacency_list();
  
-    std::cout << "path:     " << std::endl;
+    std::cout << "path!:     " << std::endl;
     for (uint32_t i = 0; i < path.size(); i++)
     {
-        std::cout << path[i];
+        std::cout << path[i] << " ";
     }
+
+
 }
 
 int main(int argc, char* argv[]) {

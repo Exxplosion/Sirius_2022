@@ -60,15 +60,15 @@ include matrix/CMakeFiles/matrix.dir/flags.make
 matrix/CMakeFiles/matrix.dir/Matrix.cpp.o: matrix/CMakeFiles/matrix.dir/flags.make
 matrix/CMakeFiles/matrix.dir/Matrix.cpp.o: ../matrix/Matrix.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/explosion/Desktop/C++/Sirius_2022/Sirius_2022/C++/task_4/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object matrix/CMakeFiles/matrix.dir/Matrix.cpp.o"
-	cd /home/explosion/Desktop/C++/Sirius_2022/Sirius_2022/C++/task_4/build/matrix && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/matrix.dir/Matrix.cpp.o -c /home/explosion/Desktop/C++/Sirius_2022/Sirius_2022/C++/task_4/matrix/Matrix.cpp
+	cd /home/explosion/Desktop/C++/Sirius_2022/Sirius_2022/C++/task_4/build/matrix && /usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/matrix.dir/Matrix.cpp.o -c /home/explosion/Desktop/C++/Sirius_2022/Sirius_2022/C++/task_4/matrix/Matrix.cpp
 
 matrix/CMakeFiles/matrix.dir/Matrix.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/matrix.dir/Matrix.cpp.i"
-	cd /home/explosion/Desktop/C++/Sirius_2022/Sirius_2022/C++/task_4/build/matrix && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/explosion/Desktop/C++/Sirius_2022/Sirius_2022/C++/task_4/matrix/Matrix.cpp > CMakeFiles/matrix.dir/Matrix.cpp.i
+	cd /home/explosion/Desktop/C++/Sirius_2022/Sirius_2022/C++/task_4/build/matrix && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/explosion/Desktop/C++/Sirius_2022/Sirius_2022/C++/task_4/matrix/Matrix.cpp > CMakeFiles/matrix.dir/Matrix.cpp.i
 
 matrix/CMakeFiles/matrix.dir/Matrix.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/matrix.dir/Matrix.cpp.s"
-	cd /home/explosion/Desktop/C++/Sirius_2022/Sirius_2022/C++/task_4/build/matrix && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/explosion/Desktop/C++/Sirius_2022/Sirius_2022/C++/task_4/matrix/Matrix.cpp -o CMakeFiles/matrix.dir/Matrix.cpp.s
+	cd /home/explosion/Desktop/C++/Sirius_2022/Sirius_2022/C++/task_4/build/matrix && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/explosion/Desktop/C++/Sirius_2022/Sirius_2022/C++/task_4/matrix/Matrix.cpp -o CMakeFiles/matrix.dir/Matrix.cpp.s
 
 # Object files for target matrix
 matrix_OBJECTS = \

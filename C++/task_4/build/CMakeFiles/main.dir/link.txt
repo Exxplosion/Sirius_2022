@@ -1,1 +1,1 @@
-/usr/bin/c++    -rdynamic CMakeFiles/main.dir/main.cpp.o  -o main  load_png/libload_png.a dijkstra/libdijkstra.a matrix/libmatrix.a 
+/usr/bin/g++  -O2 -g  -rdynamic CMakeFiles/main.dir/main.cpp.o  -o main  load_png/libload_png.a dijkstra/libdijkstra.a matrix/libmatrix.a 
