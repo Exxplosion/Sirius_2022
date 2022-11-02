@@ -1,5 +1,5 @@
 #pragma once
-#include "Matrix.h"
+#include "../matrix/Matrix.h"
 #include <vector>
 #include <iostream>
 
@@ -24,7 +24,7 @@ class dijkstra
         //std::vector<uint32_t>& path_to_dumb_view() const;
 
         template<typename T>
-        std::vector<T> &dijkstra::path_to_dumb_view() const
+        std::vector<T>& path_to_dumb_view() const
         {
             std::vector<T> *path_dumb = new std::vector<T>(0);
             for (uint32_t i = 0; i < optimal_path.size(); ++i)

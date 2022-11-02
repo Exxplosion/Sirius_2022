@@ -22,7 +22,7 @@ int main()
 
     G.print_adjacency_list();
 
-    //G.find_optimal_weights();
+    G.find_optimal_weights();
 
     std::vector<uint32_t> path = G.find_optimal_path();
 

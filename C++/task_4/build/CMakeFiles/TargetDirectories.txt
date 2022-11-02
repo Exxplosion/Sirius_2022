@@ -1,0 +1,12 @@
+/home/explosion/Desktop/C++/Sirius_2022/Sirius_2022/C++/task_4/build/CMakeFiles/rebuild_cache.dir
+/home/explosion/Desktop/C++/Sirius_2022/Sirius_2022/C++/task_4/build/CMakeFiles/edit_cache.dir
+/home/explosion/Desktop/C++/Sirius_2022/Sirius_2022/C++/task_4/build/CMakeFiles/main.dir
+/home/explosion/Desktop/C++/Sirius_2022/Sirius_2022/C++/task_4/build/load_png/CMakeFiles/rebuild_cache.dir
+/home/explosion/Desktop/C++/Sirius_2022/Sirius_2022/C++/task_4/build/load_png/CMakeFiles/edit_cache.dir
+/home/explosion/Desktop/C++/Sirius_2022/Sirius_2022/C++/task_4/build/load_png/CMakeFiles/load_png.dir
+/home/explosion/Desktop/C++/Sirius_2022/Sirius_2022/C++/task_4/build/matrix/CMakeFiles/rebuild_cache.dir
+/home/explosion/Desktop/C++/Sirius_2022/Sirius_2022/C++/task_4/build/matrix/CMakeFiles/edit_cache.dir
+/home/explosion/Desktop/C++/Sirius_2022/Sirius_2022/C++/task_4/build/matrix/CMakeFiles/matrix.dir
+/home/explosion/Desktop/C++/Sirius_2022/Sirius_2022/C++/task_4/build/dijkstra/CMakeFiles/edit_cache.dir
+/home/explosion/Desktop/C++/Sirius_2022/Sirius_2022/C++/task_4/build/dijkstra/CMakeFiles/rebuild_cache.dir
+/home/explosion/Desktop/C++/Sirius_2022/Sirius_2022/C++/task_4/build/dijkstra/CMakeFiles/dijkstra.dir

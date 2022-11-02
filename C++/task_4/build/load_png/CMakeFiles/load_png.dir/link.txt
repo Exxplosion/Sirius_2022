@@ -1,0 +1,2 @@
+/usr/bin/ar qc libload_png.a  CMakeFiles/load_png.dir/lodepng.cpp.o
+/usr/bin/ranlib libload_png.a

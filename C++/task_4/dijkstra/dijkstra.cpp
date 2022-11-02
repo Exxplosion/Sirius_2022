@@ -35,7 +35,9 @@ dijkstra::dijkstra(MatrixP &matrix, uint32_t x_s, uint32_t x_f)
 
 void dijkstra::matrix_to_adjacency_list(std::vector<std::vector<std::pair<uint32_t, uint32_t>>> &adjacency_list, const MatrixP &adjancency_matrix)
 {
+#ifdef DEBUG
     printf("%d x %d", M, N);
+#endif
     for (uint32_t i = 0; i < adjacency_list.size(); ++i)
     {
         /* if (i == 0)
@@ -59,10 +61,10 @@ void dijkstra::matrix_to_adjacency_list(std::vector<std::vector<std::pair<uint32
  */     {
             i_ = i / N;
             j_ = i % N;
-        } 
-
+        }
+#ifdef DEBUG
         printf("(i - %d, i_ - %d, j_ - %d)  \n", i, i_, j_);
-
+#endif
         // FOR M > N 
         if (j_ == 0)
         {

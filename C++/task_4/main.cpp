@@ -83,9 +83,19 @@ void findOptimalPath(int** arr, vector<int>& path, int x_i, int x_f, int rows, i
 
     dijkstra G(A, x_i, x_f);
 
+    std::cout << " x_f x_s:"<< G.x_s << " "<< G.x_f << std::endl;
+
+    std::cout << " M  N:" << G.M << " " << G.N << std::endl;
+
     G.find_optimal_path();
 
     path = G.path_to_dumb_view<int>();
+ 
+    std::cout << "path:     " << std::endl;
+    for (uint32_t i = 0; i < path.size(); i++)
+    {
+        std::cout << path[i];
+    }
 }
 
 int main(int argc, char* argv[]) {

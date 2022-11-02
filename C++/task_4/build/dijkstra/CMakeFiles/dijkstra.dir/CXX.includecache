@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/explosion/Desktop/C++/Sirius_2022/Sirius_2022/C++/task_4/dijkstra/dijkstra.cpp
+dijkstra.h
+/home/explosion/Desktop/C++/Sirius_2022/Sirius_2022/C++/task_4/dijkstra/dijkstra.h
+stdio.h
+-
+algorithm
+-
+cstring
+-
+
+/home/explosion/Desktop/C++/Sirius_2022/Sirius_2022/C++/task_4/dijkstra/dijkstra.h
+../matrix/Matrix.h
+/home/explosion/Desktop/C++/Sirius_2022/Sirius_2022/C++/task_4/matrix/Matrix.h
+vector
+-
+iostream
+-
+
+/home/explosion/Desktop/C++/Sirius_2022/Sirius_2022/C++/task_4/matrix/Matrix.h
+stdexcept
+-
+
