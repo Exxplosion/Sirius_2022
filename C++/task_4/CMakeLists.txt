@@ -12,7 +12,7 @@ endif()
 #set(CMAKE_CXX_FLAGS "-Wall -Wextra -pedantic")                # common
 #set(CMAKE_CXX_FLAGS_DEBUG "-Og -g -DDEBUG")                   # debug only
 #set(CMAKE_CXX_FLAGS_RELEASE "-Ofast -DNDEBUG")  # release only
-set(CMAKE_CXX_FLAGS "-O2")
+set(CMAKE_CXX_FLAGS " -Wall -Wextra -pedantic -O -g")
 
 add_executable(${PROJECT_NAME} main.cpp)
 

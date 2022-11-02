@@ -89,19 +89,17 @@ void findOptimalPath(int** arr, vector<int>& path, int x_i, int x_f, int rows, i
 
     G.find_optimal_path();
 
-/*     std::vector<uint32_t> path_n = G.find_optimal_path();
-
-    cout << ("        est sajhaj\n");
-
-    for (uint32_t i = 0; i < path_n.size(); ++i)
+    printf("Optimal path!: \n");
+    for (uint32_t i = 0; i < G.optimal_path.size(); ++i)
     {
-        printf("%d ", path_n[i]);
+        printf("%d ", G.optimal_path[i]);
     }
- */
+
+
+    G.print_adjacency_list();
+
     path = G.path_to_dumb_view<int>();
 
-    //G.print_adjacency_list();
- 
     std::cout << "path!:     " << std::endl;
     for (uint32_t i = 0; i < path.size(); i++)
     {
@@ -135,7 +133,7 @@ int main(int argc, char* argv[]) {
     getBlueChannel(image, arr, rows, cols);  
 
     // можно опционально выводить массив в консоль для отладки 
-    printArray(arr, rows, cols);  
+    //printArray(arr, rows, cols);  
     
     //функцию ниже вам нужно реализовать
     //-----------------------------------------------------------------------------
@@ -150,7 +148,7 @@ int main(int argc, char* argv[]) {
     // очищаем память
     for (int row = 0; row < rows; ++row )
         delete[] arr[row];
-    delete arr;
+    delete[] arr;
     getchar();
 }
 

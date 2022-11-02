@@ -25,7 +25,7 @@ dijkstra::dijkstra(MatrixP &matrix, uint32_t x_s, uint32_t x_f)
     this->current_weights = std::vector<uint32_t>(count_vertex, INF_); //???
     current_weights[x_s] = 0;
 
-    this->parrent_array = std::vector<uint32_t>(count_vertex, 0);
+    this->parrent_array = std::vector<uint32_t>(count_vertex, INF_);
     this->marker = std::vector<bool>(count_vertex, false);
 
     this->adjacency_list = std::vector<std::vector<std::pair<uint32_t, uint32_t>>>(count_vertex);
@@ -65,46 +65,93 @@ void dijkstra::matrix_to_adjacency_list(std::vector<std::vector<std::pair<uint32
 #ifdef DEBUG
         printf("(i - %d, i_ - %d, j_ - %d)  \n", i, i_, j_);
 #endif
-        // FOR M > N 
-        if (j_ == 0)
+        // FOR M > N
+        if (M >= N)
         {
-            adjacency_list[i] = std::vector<std::pair<uint32_t, uint32_t>>(2);
-            adjacency_list[i][0] = std::make_pair(i + 1, adjancency_matrix(i_, j_ + 1));
-            adjacency_list[i][1] = std::make_pair(i + M, adjancency_matrix(i_ + 1 , j_));
-        }
-        else 
-        {
-            if (j_ == N - 1)
-            {
-                if (i_ != M - 1)
-                {
-                    adjacency_list[i] = std::vector<std::pair<uint32_t, uint32_t>>(2);
-                    adjacency_list[i][0] = std::make_pair(i - 1, adjancency_matrix(i_, j_ - 1));
-                    adjacency_list[i][1] = std::make_pair(i + M, adjancency_matrix(i_ + 1, j_));
-                }
-                else
-                {
-                    adjacency_list[i] = std::vector<std::pair<uint32_t, uint32_t>>(0);
-                    //adjacency_list[i][0] = std::make_pair(i, INF_);
-                }
-            }
-            if ((j_ != 0) && (j_ != N-1) && (i_ == M - 1))
+            if (j_ == 0)
             {
                 adjacency_list[i] = std::vector<std::pair<uint32_t, uint32_t>>(2);
-                adjacency_list[i][0] = std::make_pair(i + 1, adjancency_matrix(i_, j_ + 1));
-                adjacency_list[i][1] = std::make_pair(i - 1, adjancency_matrix(i_, j_ - 1));
+                adjacency_list[i][0] = std::make_pair((uint32_t)(i + 1), (uint32_t)adjancency_matrix(i_, j_ + 1));
+                adjacency_list[i][1] = std::make_pair((uint32_t)(i + M), (uint32_t)adjancency_matrix(i_ + 1, j_));
             }
             else
             {
-                if ((j_ != 0) && (j_ != N - 1) && (i_ != M - 1))
+                if (j_ == N - 1)
                 {
-                    adjacency_list[i] = std::vector<std::pair<uint32_t, uint32_t>>(3);
-                    adjacency_list[i][0] = std::make_pair(i - 1, adjancency_matrix(i_, j_ - 1));
-                    adjacency_list[i][1] = std::make_pair(i + M, adjancency_matrix(i_ + 1, j_));
-                    adjacency_list[i][2] = std::make_pair(i + 1, adjancency_matrix(i_, j_ + 1));
+                    if (i_ != M - 1)
+                    {
+                        adjacency_list[i] = std::vector<std::pair<uint32_t, uint32_t>>(2);
+                        adjacency_list[i][0] = std::make_pair((uint32_t)(i - 1), (uint32_t)adjancency_matrix(i_, j_ - 1));
+                        adjacency_list[i][1] = std::make_pair((uint32_t)(i + M), (uint32_t)adjancency_matrix(i_ + 1, j_));
+                    }
+                    else
+                    {
+                        adjacency_list[i] = std::vector<std::pair<uint32_t, uint32_t>>(0);
+                        //adjacency_list[i][0] = std::make_pair(i, INF_);
+                    }
+                }
+                if ((j_ != 0) && (j_ != N - 1) && (i_ == M - 1))
+                {
+                    adjacency_list[i] = std::vector<std::pair<uint32_t, uint32_t>>(2);
+                    adjacency_list[i][0] = std::make_pair((uint32_t)(i + 1), (uint32_t)adjancency_matrix(i_, j_ + 1));
+                    adjacency_list[i][1] = std::make_pair((uint32_t)(i - 1), (uint32_t)adjancency_matrix(i_, j_ - 1));
+                }
+                else
+                {
+                    if ((j_ != 0) && (j_ != N - 1) && (i_ != M - 1))
+                    {
+                        adjacency_list[i] = std::vector<std::pair<uint32_t, uint32_t>>(3);
+                        adjacency_list[i][0] = std::make_pair((uint32_t)(i - 1), (uint32_t)adjancency_matrix(i_, j_ - 1));
+                        adjacency_list[i][1] = std::make_pair((uint32_t)(i + M), (uint32_t)adjancency_matrix(i_ + 1, j_));
+                        adjacency_list[i][2] = std::make_pair((uint32_t)(i + 1), (uint32_t)adjancency_matrix(i_, j_ + 1));
+                    }
                 }
             }
         }
+        else
+        {
+            if (j_ == 0)
+            {
+                adjacency_list[i] = std::vector<std::pair<uint32_t, uint32_t>>(2);
+                adjacency_list[i][0] = std::make_pair((uint32_t)(i + 1), (uint32_t)adjancency_matrix(i_, j_ + 1));
+                adjacency_list[i][1] = std::make_pair((uint32_t)(i + N), (uint32_t)adjancency_matrix(i_ + 1, j_));
+            }
+            else
+            {
+                if (j_ == N - 1)
+                {
+                    if (i_ != M - 1)
+                    {
+                        adjacency_list[i] = std::vector<std::pair<uint32_t, uint32_t>>(2);
+                        adjacency_list[i][0] = std::make_pair((uint32_t)(i - 1), (uint32_t)adjancency_matrix(i_, j_ - 1));
+                        adjacency_list[i][1] = std::make_pair((uint32_t)(i + N), (uint32_t)adjancency_matrix(i_ + 1, j_));
+                    }
+                    else
+                    {
+                        adjacency_list[i] = std::vector<std::pair<uint32_t, uint32_t>>(0);
+                        //adjacency_list[i][0] = std::make_pair(i, INF_);
+                    }
+                }
+                if ((j_ != 0) && (j_ != N - 1) && (i_ == M - 1))
+                {
+                    adjacency_list[i] = std::vector<std::pair<uint32_t, uint32_t>>(2);
+                    adjacency_list[i][0] = std::make_pair((uint32_t)(i + 1), (uint32_t)adjancency_matrix(i_, j_ + 1));
+                    adjacency_list[i][1] = std::make_pair((uint32_t)(i - 1), (uint32_t)adjancency_matrix(i_, j_ - 1));
+                }
+                else
+                {
+                    if ((j_ != 0) && (j_ != N - 1) && (i_ != M - 1))
+                    {
+                        adjacency_list[i] = std::vector<std::pair<uint32_t, uint32_t>>(3);
+                        adjacency_list[i][0] = std::make_pair((uint32_t)(i - 1), (uint32_t)adjancency_matrix(i_, j_ - 1));
+                        adjacency_list[i][1] = std::make_pair((uint32_t)(i + N), (uint32_t)adjancency_matrix(i_ + 1, j_));
+                        adjacency_list[i][2] = std::make_pair((uint32_t)(i + 1), (uint32_t)adjancency_matrix(i_, j_ + 1));
+                    }
+                }
+            }
+        }
+        
+        
     }
 }
 
@@ -126,13 +173,13 @@ void dijkstra::find_optimal_weights()
 {
     for (uint32_t i = 0; i < count_vertex; ++i)
     {
-        int v = -1;
+        long long int v = -1;
         for (uint32_t j = 0; j < count_vertex; ++j)
         {
             if (!marker[j] && (v == -1 || current_weights[j] < current_weights[v]))
                 v = j;
         }
-        if ((current_weights[v] == INF_)) //v never be equal -1
+        if (current_weights[v] == INF_) //v never be equal -1
             break;
         marker[v] = true;
 
@@ -151,7 +198,7 @@ void dijkstra::find_optimal_weights()
 std::vector<uint32_t>& dijkstra::find_optimal_path()
 {
     dijkstra::find_optimal_weights();
-    std::vector<uint32_t>* path = new std::vector<uint32_t>(0);
+    std::vector<uint32_t>* path = new std::vector<uint32_t>;
 
     for (uint32_t v = x_f; v!= x_s; v = parrent_array[v])
     {

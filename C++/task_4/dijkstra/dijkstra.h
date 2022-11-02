@@ -6,7 +6,7 @@
 class dijkstra
 {
     public:
-        const unsigned int INF_ = 4e4;
+        const uint32_t INF_ = 45000; //45K
         uint32_t x_s;
         uint32_t x_f;
         uint32_t N = 0, M = 0;
@@ -29,7 +29,14 @@ class dijkstra
             std::vector<T> *path_dumb = new std::vector<T>(0);
             for (uint32_t i = 0; i < optimal_path.size(); ++i)
             {
-                (*path_dumb).push_back(optimal_path[i] % N); // case M > N
+                if (M >= N)
+                {
+                    (*path_dumb).push_back(optimal_path[i] % M); // case M > N
+                }
+                else
+                {
+                    (*path_dumb).push_back(optimal_path[i] % N); // case M > N
+                }
             }
             return (*path_dumb);
         }
