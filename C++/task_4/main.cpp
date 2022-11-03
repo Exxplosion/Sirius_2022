@@ -83,24 +83,33 @@ void findOptimalPath(int** arr, vector<int>& path, int x_i, int x_f, int rows, i
 
     dijkstra G(A, x_i, x_f);
 
-    std::cout << " x_f x_s:"<< G.x_s << " "<< G.x_f << std::endl;
+    //std::cout << " x_f x_s:"<< G.x_s << " "<< G.x_f << std::endl;
 
-    std::cout << " M  N:" << G.M << " " << G.N << std::endl;
+    //std::cout << " M  N:" << G.M << " " << G.N << std::endl;
 
     G.find_optimal_path();
 
-    printf("Optimal path!: \n");
+    //printf("\nOptimal path!: \n");
+    uint32_t sum = 0;
+
+
     for (uint32_t i = 0; i < G.optimal_path.size(); ++i)
     {
-        printf("%d ", G.optimal_path[i]);
+        //printf("%d ", G.optimal_path[i]);
+        int i_ = G.optimal_path[i] / cols;
+        int j_ = G.optimal_path[i] % cols;
+        sum += arr[i_][j_];
+
+        //printf("%d, %d\n", i_, j_);
     }
 
 
-    G.print_adjacency_list();
+    //printf("\nSUM : %u\n", sum);
+
 
     path = G.path_to_dumb_view<int>();
 
-    std::cout << "path!:     " << std::endl;
+    std::cout << "\n path!:     \n" << std::endl;
     for (uint32_t i = 0; i < path.size(); i++)
     {
         std::cout << path[i] << " ";
@@ -133,7 +142,7 @@ int main(int argc, char* argv[]) {
     getBlueChannel(image, arr, rows, cols);  
 
     // можно опционально выводить массив в консоль для отладки 
-    //printArray(arr, rows, cols);  
+    printArray(arr, rows, cols);  
     
     //функцию ниже вам нужно реализовать
     //-----------------------------------------------------------------------------
