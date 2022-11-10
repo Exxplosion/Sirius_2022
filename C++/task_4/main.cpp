@@ -107,7 +107,11 @@ void findOptimalPath(int** arr, vector<int>& path, int x_i, int x_f, int rows, i
     //printf("\nSUM : %u\n", sum);
 
 
-    path = G.path_to_dumb_view<int>();
+    for (uint32_t i = 0; i < G.optimal_path.size(); ++i)
+    {
+        (path).push_back(G.optimal_path[i] % cols); 
+    }
+    
 
     std::cout << "\n path!:     \n" << std::endl;
     for (uint32_t i = 0; i < path.size(); i++)
@@ -142,7 +146,7 @@ int main(int argc, char* argv[]) {
     getBlueChannel(image, arr, rows, cols);  
 
     // можно опционально выводить массив в консоль для отладки 
-    printArray(arr, rows, cols);  
+    //printArray(arr, rows, cols);
     
     //функцию ниже вам нужно реализовать
     //-----------------------------------------------------------------------------

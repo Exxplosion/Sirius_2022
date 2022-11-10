@@ -36,7 +36,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : " -Wall -Wextra -pedantic -O -g -g  "
+					"fragment" : " -Wall -Wextra -pedantic -Ofast  -g  "
 				},
 				{
 					"fragment" : "-std=gnu++17"

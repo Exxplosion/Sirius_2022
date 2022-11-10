@@ -1,22 +1,22 @@
 [
 {
   "directory": "/home/explosion/Desktop/C++/Sirius_2022/Sirius_2022/C++/task_4/build",
-  "command": "/usr/bin/g++   -I/home/explosion/Desktop/C++/Sirius_2022/Sirius_2022/C++/task_4/load_png -I/home/explosion/Desktop/C++/Sirius_2022/Sirius_2022/C++/task_4/dijkstra -I/home/explosion/Desktop/C++/Sirius_2022/Sirius_2022/C++/task_4/matrix   -Wall -Wextra -pedantic -O -g -g   -std=gnu++17 -o CMakeFiles/main.dir/main.cpp.o -c /home/explosion/Desktop/C++/Sirius_2022/Sirius_2022/C++/task_4/main.cpp",
+  "command": "/usr/bin/g++   -I/home/explosion/Desktop/C++/Sirius_2022/Sirius_2022/C++/task_4/load_png -I/home/explosion/Desktop/C++/Sirius_2022/Sirius_2022/C++/task_4/dijkstra -I/home/explosion/Desktop/C++/Sirius_2022/Sirius_2022/C++/task_4/matrix   -Wall -Wextra -pedantic -Ofast  -g   -std=gnu++17 -o CMakeFiles/main.dir/main.cpp.o -c /home/explosion/Desktop/C++/Sirius_2022/Sirius_2022/C++/task_4/main.cpp",
   "file": "/home/explosion/Desktop/C++/Sirius_2022/Sirius_2022/C++/task_4/main.cpp"
 },
 {
   "directory": "/home/explosion/Desktop/C++/Sirius_2022/Sirius_2022/C++/task_4/build/load_png",
-  "command": "/usr/bin/g++     -Wall -Wextra -pedantic -O -g -g   -std=gnu++17 -o CMakeFiles/load_png.dir/lodepng.cpp.o -c /home/explosion/Desktop/C++/Sirius_2022/Sirius_2022/C++/task_4/load_png/lodepng.cpp",
+  "command": "/usr/bin/g++     -Wall -Wextra -pedantic -Ofast  -g   -std=gnu++17 -o CMakeFiles/load_png.dir/lodepng.cpp.o -c /home/explosion/Desktop/C++/Sirius_2022/Sirius_2022/C++/task_4/load_png/lodepng.cpp",
   "file": "/home/explosion/Desktop/C++/Sirius_2022/Sirius_2022/C++/task_4/load_png/lodepng.cpp"
 },
 {
   "directory": "/home/explosion/Desktop/C++/Sirius_2022/Sirius_2022/C++/task_4/build/matrix",
-  "command": "/usr/bin/g++     -Wall -Wextra -pedantic -O -g -g   -std=gnu++17 -o CMakeFiles/matrix.dir/Matrix.cpp.o -c /home/explosion/Desktop/C++/Sirius_2022/Sirius_2022/C++/task_4/matrix/Matrix.cpp",
+  "command": "/usr/bin/g++     -Wall -Wextra -pedantic -Ofast  -g   -std=gnu++17 -o CMakeFiles/matrix.dir/Matrix.cpp.o -c /home/explosion/Desktop/C++/Sirius_2022/Sirius_2022/C++/task_4/matrix/Matrix.cpp",
   "file": "/home/explosion/Desktop/C++/Sirius_2022/Sirius_2022/C++/task_4/matrix/Matrix.cpp"
 },
 {
   "directory": "/home/explosion/Desktop/C++/Sirius_2022/Sirius_2022/C++/task_4/build/dijkstra",
-  "command": "/usr/bin/g++     -Wall -Wextra -pedantic -O -g -g   -std=gnu++17 -o CMakeFiles/dijkstra.dir/dijkstra.cpp.o -c /home/explosion/Desktop/C++/Sirius_2022/Sirius_2022/C++/task_4/dijkstra/dijkstra.cpp",
+  "command": "/usr/bin/g++     -Wall -Wextra -pedantic -Ofast  -g   -std=gnu++17 -o CMakeFiles/dijkstra.dir/dijkstra.cpp.o -c /home/explosion/Desktop/C++/Sirius_2022/Sirius_2022/C++/task_4/dijkstra/dijkstra.cpp",
   "file": "/home/explosion/Desktop/C++/Sirius_2022/Sirius_2022/C++/task_4/dijkstra/dijkstra.cpp"
 }
 ]

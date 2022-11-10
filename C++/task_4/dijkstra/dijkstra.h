@@ -6,7 +6,7 @@
 class dijkstra
 {
     public:
-        const uint32_t INF_ = 45000; //45K
+        const uint32_t INF_ = 450000; //45K
         uint32_t x_s;
         uint32_t x_f;
         uint32_t N = 0, M = 0;
@@ -20,25 +20,17 @@ class dijkstra
         std::vector<uint32_t> optimal_path;
 
         void find_optimal_weights();
-        std::vector<uint32_t>& find_optimal_path();
-        //std::vector<uint32_t>& path_to_dumb_view() const;
+        void find_optimal_path();
 
         template<typename T>
-        std::vector<T>& path_to_dumb_view() const
+        std::vector<T> path_to_dumb_view() const
         {
-            std::vector<T> *path_dumb = new std::vector<T>(0);
+            std::vector<T> path_dumb = std::vector<T>(optimal_path.size());
             for (uint32_t i = 0; i < optimal_path.size(); ++i)
             {
-                if (M >= N)
-                {
-                    (*path_dumb).push_back(optimal_path[i] % M); // case M > N
-                }
-                else
-                {
-                    (*path_dumb).push_back(optimal_path[i] % N); // case M > N
-                }
+                (path_dumb).push_back(optimal_path[i] % N); // case M > N
             }
-            return (*path_dumb);
+            return (path_dumb); //opimize here
         }
 
         dijkstra() = default;

@@ -3,7 +3,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "dijkstra/libdijkstra.a"
+			"path" : "matrix/libmatrix.a"
 		}
 	],
 	"backtrace" : 1,
@@ -15,7 +15,7 @@
 		],
 		"files" : 
 		[
-			"dijkstra/CMakeLists.txt"
+			"matrix/CMakeLists.txt"
 		],
 		"nodes" : 
 		[
@@ -36,7 +36,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : " -Wall -Wextra -pedantic -O -g -g  "
+					"fragment" : " -Wall -Wextra -pedantic -Ofast  -g  "
 				},
 				{
 					"fragment" : "-std=gnu++17"
@@ -49,13 +49,13 @@
 			]
 		}
 	],
-	"id" : "dijkstra::@4236d3a8481574ab832c",
-	"name" : "dijkstra",
-	"nameOnDisk" : "libdijkstra.a",
+	"id" : "matrix::@23c283fdd1b78e1a8728",
+	"name" : "matrix",
+	"nameOnDisk" : "libmatrix.a",
 	"paths" : 
 	{
-		"build" : "dijkstra",
-		"source" : "dijkstra"
+		"build" : "matrix",
+		"source" : "matrix"
 	},
 	"sourceGroups" : 
 	[
@@ -79,12 +79,12 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "dijkstra/dijkstra.cpp",
+			"path" : "matrix/Matrix.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
-			"path" : "dijkstra/dijkstra.h",
+			"path" : "matrix/Matrix.h",
 			"sourceGroupIndex" : 1
 		}
 	],
